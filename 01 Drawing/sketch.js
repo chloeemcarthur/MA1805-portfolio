@@ -9,6 +9,8 @@ function draw() {
   strokeWeight(7); // stroke weight
   arc(154, 250, 100, 100, 0.4, PI); // left side of mouth
   arc(246, 250, 100, 100, 0, PI-0.4); // right side of mouth
+  arc(110, 240, 30, 10, 1, PI - 0.2); // left mouth crease
+  arc(295, 240, 30, 10, 0.5, PI - 0.4); // right mouth crease
   fill(0, 0, 0); // eye outline colour
   circle(135, 150, 75); // left eye outline
   circle(265, 150, 75); // right eye outline
@@ -20,4 +22,5 @@ function draw() {
   circle (265, 150, 5); // right pupil
   line (90, 110, 160, 90); // left eyebrow
   line (310, 110, 240, 90); // right eyebrow
+  
 }
