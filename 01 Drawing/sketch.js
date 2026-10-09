@@ -8,7 +8,7 @@ function draw() {
   circle(200, 200, 350); // face outline
   strokeWeight(5); // stroke weight
   arc(154, 250, 100, 100, 0.4, PI); // left side of mouth
-  arc(246, 250, 100, 100, 0,PI-0.4); // right side of mouth
+  arc(246, 250, 100, 100, 0, PI-0.4); // right side of mouth
   fill(0, 0, 0); // eye outline colour
   circle(135, 150, 75); // left eye outline
   circle(265, 150, 75); // right eye outline
