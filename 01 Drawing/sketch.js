@@ -6,7 +6,7 @@ function draw() {
   background(255); //background colour
   fill (255, 222, 52); // face colour
   circle(200, 200, 350); // face outline
-  strokeWeight(5); // stroke weight
+  strokeWeight(7); // stroke weight
   arc(154, 250, 100, 100, 0.4, PI); // left side of mouth
   arc(246, 250, 100, 100, 0, PI-0.4); // right side of mouth
   fill(0, 0, 0); // eye outline colour
