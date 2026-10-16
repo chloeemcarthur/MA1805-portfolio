@@ -21,6 +21,6 @@ function draw() {
   circle (135, 150, 5); // left pupil
   circle (265, 150, 5); // right pupil
   line (90, 110, 160, 90); // left eyebrow
-  line (310, 110, 240, 90); // right eyebrow
+  line (310, 110, 240, 80); // right eyebrow
   
 }
