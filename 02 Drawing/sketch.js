@@ -22,7 +22,7 @@ function draw() {
   ellipse(x1, y1, x2, y2); // Random  sized shape 
   
   // create ellipse counter
-  let myText = "Circles "+lines; // set text variable
+  let myText = "Circles "+ lines; // set text variable
   fill(0); // set text colour
   textSize(width/20); // set text size
   textAlign(CENTER, CENTER); // set text alignment
