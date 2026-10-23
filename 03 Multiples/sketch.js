@@ -3,10 +3,9 @@ function setup() { // setup function
 }
 
 function draw() { // draw function
-  background(80); // background color
+  background(40); // background color
   let i=0; // initialize i to 1
-
-  while(i<= 100){ // while loop to draw squares
+  while(i<= 100){ // while loop to draw squares for grid
     square (i*80+10, 10, 70); // draw row at y=10
     square (i*80+10, 90, 70); // draw row at y=90
     square (i*80+10, 170, 70); // draw row at y=170
