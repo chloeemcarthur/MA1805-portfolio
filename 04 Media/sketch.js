@@ -1,11 +1,16 @@
-function preload() { // preload function}
+let overlayImage;
+let video;
 
+function preload() { // preload function}
+  overlayImage = loadImage('PointingWojakOverlay.png'); // load the overlay image
+  video = createVideo('Endgame.mov');
 }
 
 function setup() { // setup function
-  
+  createCanvas(windowWidth, windowHeight); // create a canvas that fills the window
 }
 
 function draw() { // draw function
-  
+  image(overlayImage, 0, 0); // draw the overlay image at the top-left corner of the canvas
+  image(video, 0, 0,); // draw the video at the top-left corner of the canvas
 }
