@@ -21,7 +21,7 @@ function draw() { // draw function
   image(video, 0, 0, width, height); // draw the video on the canvas
 
   if (!videoStarted) { // check if the video has not started yet
-    fill(0); // set fill color to white
+    fill(0); // set fill color to black
     noStroke(); // disable stroke
     textAlign(CENTER, CENTER); // set text alignment to center
     textSize(24); // set text size
@@ -61,7 +61,7 @@ function mousePressed() { // mousePressed function
 function mouseReleased () { // mouseReleased function
   reactionSound.stop(); // stop the reaction sound
   if (videoStarted) { // check if the video has started
-    reactionEnabled = true; // toggle the reactionEnabled flag
+    reactionEnabled = true; // enable the reaction
   } // end of if statement
 } // end of mouseReleased function
 
