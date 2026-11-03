@@ -1,1 +1,4 @@
-All 4 portfolio pieces are hosted at https://github.com/chloeemcarthur/MA1805-portfolio
+01 Drawing - https://chloeemcarthur.github.io/MA1805-portfolio/01%20Drawing/
+02 Movement - https://chloeemcarthur.github.io/MA1805-portfolio/02%20Movement/
+03 Multiples - https://chloeemcarthur.github.io/MA1805-portfolio/03%20Multiples/
+04 Media - https://chloeemcarthur.github.io/MA1805-portfolio/04%20Media/

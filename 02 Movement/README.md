@@ -1,1 +1,3 @@
+This piece is about the uncertainty of digital communication in the modern age through fragments of messages that were never sent. Phrases are generated from an array with random positions, speeds, sizes, and lifespans. Each message drifts slows across the screen, fading into and then out of view before being replaced.
 
+I wanted the messages to seem hesistant and directionless, like thoughts that someone considers expressing but ultimately abandons. The phrases never reach a recipient.
