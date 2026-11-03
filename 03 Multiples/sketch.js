@@ -95,7 +95,7 @@ function draw() { // draw function
   for (let i = 0; i < agreements.length; i++) { // loop through the agreements array
     if (agreements[i].checked) { // if the agreement is checked
       accepted++; // increment the accepted counter
-    } // end of for loop
+    } // end of if statement
   } // end of for loop
 
   // draw agreements accepted counter
