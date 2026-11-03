@@ -43,4 +43,54 @@ function createMessage() { // createMessage function
   }; // end of return
 } // end of createMessage function
 
-function draw
+function draw()  { // draw function
+  background (16,19,32); // dark blue background
+
+  // loop through every message in the array
+  for (let i = 0; i < messages.length; i++) { // start of for loop
+    let message = messages[i];
+
+    // move the message each frame
+    message.x += message.speedX; // increase the message's x-coordinate by speedX
+    message.y += message.speedY; // increas the message's y-coordinate by speedY
+
+    // increase the message's age 
+    message.age++; // increment message age by 1
+    
+    //gradually fade the message in 
+    let fadeIn = constrain( // constrains fadeIn variable to between 0 and 1
+      map(message.age, 0, 50, 0, 1), // squishes age values by a factor of 50
+      0, // lower bound for constrain
+      1 // upper bound for contrain
+    ); // end of constrain
+    
+    let fadeOut = constrain( // constrains fadeIn variable to between 0 and 1
+      map(message.age, message.lifespan - 80, message.lifespan, 1, 0), // squishes age values by a factor of 80
+      0, // lower bound for constrain
+      1 // upper bound for constrain
+    );
+    // calculate opacity
+    let opacity = 210 * min(fadeIn, fadeOut); // sets opacity to 210 multiplied by the lower of fadeIn and fadeOut
+
+    // draw the messsage
+    noStroke(); // no stroke width
+    fill(230, 230, 245, opacity); // fill colour and set opacity
+    textSize(message.size); // set text size to message.size
+    text(message.phrase, message.x, message.y); // display message
+
+    // replace disappeared messages
+    if ( // start of if statement
+      message.age >= message.lifespan || // if message lifespan has expired OR
+      message.x < -200 ||// if message is off of the left side of the screen OR
+      message.x > width + 200 || // if message is off of the right side of the screen OR
+      message.y < -50 || // if message is off of the bottom of the screen OR
+      message.y > height + 50 // if message is off of the top of the screen 
+    ) {
+      messages[i] = createMessage(); // create a new message
+    }
+  } // end of for loop
+} // end of draw function
+
+function windowResized() {
+  resizeCanvas (windowWidth, windowHeight);
+}
