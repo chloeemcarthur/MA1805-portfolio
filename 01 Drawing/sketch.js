@@ -1,6 +1,6 @@
 function setup() { // setup function
   createCanvas(windowWidth, windowHeight); // set canvas size
-}
+} // end of setup function
 
 function draw() { // draw function
   // setup
@@ -41,4 +41,8 @@ function draw() { // draw function
   strokeWeight(5); // eyebrow stroke weight
   line (90, 110, 160, 90); // left eyebrow
   line (310, 110, 240, 90); // right eyebrow
-}
+} // end of draw function
+
+function windowResized() { // windowResized function
+  resizeCanvas(windowWidth, windowHeight); // resize canvas to fit the new window size
+} // end of windowResized function
